@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+body {
+  min-height: 100vh;
+
+  color: $dark-text-color;
+  background: linear-gradient(to bottom right, $purple, $purple, $blue);
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+
+  width: 31px;
+  height: 31px;
+
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.modal-close:hover {
+  opacity: 1;
+}
+.modal-close::before, .modal-close::after {
+  position: absolute;
+  left: 15px;
+
+  height: 30px;
+  width: 3px;
+
+  background-color: $dark-text-color;
+
+  content: ' ';
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}

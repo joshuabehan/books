@@ -1,0 +1,81 @@
+@import 'variables.scss';
+
+.key-button {
+  height: 100%;
+  width: 58px;
+  border: 3px solid white;
+
+  color: $white;
+  background-color: $purple;
+
+  font-size: 18px;
+  font-family: Montserrat, sans-serif;
+
+  cursor: pointer;
+
+  @media (min-width: 500px) {
+    width: 95px;
+  }
+
+  @media (min-width: 900px) {
+    border: 0;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    background-color: transparent;
+    color: $purple;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $hover-highlight-color;
+    }
+  }
+
+}
+
+.key-button__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+.modal-key .modal-content {
+  border: 0;
+  border-radius: 0;
+}
+
+.key {
+  padding: 40px 15px 15px 0;
+  color: $dark-text-color;
+  font-family: Montserrat, sans-serif;
+}
+
+.key-item {
+  margin-bottom: 25px;
+}
+
+  .key-item__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    padding-left: 45px;
+  }
+
+  .key-item__label {
+    margin-left: 20px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .key-item__text {
+    padding-left: 102px;
+
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }

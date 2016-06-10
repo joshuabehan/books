@@ -1,0 +1,114 @@
+{
+  "bookList": [
+    {
+      "slug": "the-curse-of-chalion",
+      "author": "Lois McMaster Bujold",
+      "title": "The Curse of Chalion",
+      "year": "2001",
+      "series": "and Paladin of Souls",
+      "blurb": "A pantheon of five gods who interact with mortals in mysterious ways. A broken hero, a curse, and a spirited young princess.",
+      "icon": "curse43.jpg",
+      "tags": {
+        "mystical": true,
+        "mysterious": true,
+        "feelings": true
+      }
+    },
+    {
+      "slug": "clans-of-the-alphane-moon",
+      "author": "Philip K. Dick",
+      "title": "Clans of the Alphane Moon",
+      "year": "1964",
+      "blurb": "Psychiatric patients form a peaceful society on an abandoned moon. Also, a really nice telepathic slime mould.",
+      "icon": "clans43.jpg",
+      "tags": {
+        "weird": true
+      }
+    },
+    {
+      "slug": "diaspora",
+      "author": "Greg Egan",
+      "title": "Diaspora",
+      "year": "1997",
+      "blurb": "Extra hard sci-fi. In the future, uploaded humans live in virtual cities, each with their own unique culture. An unforseen event causes a Diaspora...",
+      "icon": "diaspora43.jpg",
+      "tags": {
+        "complex": true
+      }
+    },
+    {
+      "slug": "children-of-time",
+      "author": "Adrian Tchaikovsky",
+      "title": "Children of Time",
+      "year": "2015",
+      "blurb": "Terraforming, evolutionary uplift, the survival of humanity, the search for a new home, first contact, slower than light space travel...",
+      "icon": "children43.jpg",
+      "tags": {
+        "feelings": true
+      }
+    },
+    {
+      "slug": "mockingbird",
+      "author": "Walter Tevis",
+      "title": "Mockingbird",
+      "year": "1980",
+      "blurb": "A dystopian future. A declining, drugged, illiterate, self absorbed population. Privacy and individualism taken to the extreme. Sad and broken robots.",
+      "icon": "mockingbird43.jpg",
+      "tags": {
+        "feelings": true
+      }
+    },
+    {
+      "slug": "annihilation",
+      "author": "Jeff Vandermeer",
+      "title": "Annihilation",
+      "year": "2014",
+      "series": "and the Southern Reach Trilogy",
+      "blurb": "Where lies the strangling fruit that came from the hand of the sinner I shall bring forth the seeds of the dead to share with the worms that gather in the darkness...",
+      "icon": "annihilation43.jpeg",
+      "tags": {
+        "spooky": true,
+        "weird": true,
+        "complex": true
+      }
+    },
+    {
+      "slug": "the-snow-queen",
+      "author": "Joan D. Vinge",
+      "title": "The Snow Queen",
+      "year": "1980",
+      "series": "and the Snow Queen Cycle series",
+      "blurb": "An ocean planet ruled by a Queen, 150 year summers and winters, all knowing sibyls, technology from a fallen galactic empire, the price of immortality.",
+      "icon": "snow43.jpg",
+      "tags": {
+        "mystical": true
+      }
+    },
+    {
+      "slug": "city-of-bones",
+      "author": "Martha Wells",
+      "title": "City of Bones",
+      "year": "1996",
+      "blurb": "Post-apocalyptic fantasy world. Arcane relics hidden in the desert ruins of mysterious forerunners. A handsome marsupial treasure hunter.",
+      "icon": "cityofbones43.jpg",
+      "tags": {
+        "mysterious": true,
+        "mystical": true
+      }
+    },
+    {
+      "slug": "the-shadow-of-the-torturer",
+      "author": "Gene Wolfe",
+      "title": "The Shadow of the Torturer",
+      "year": "1980",
+      "series": "and the Book of the New Sun series",
+      "blurb": "Far in the incomprehensible future, on a dying Earth. A young executioner is exiled and goes on a bizarre journey.",
+      "icon": "shadowofthetorturer43.jpg",
+      "tags": {
+        "complex": true,
+        "weird": true,
+        "mystical": true
+      }
+    }
+  ]
+}

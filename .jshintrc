@@ -1,0 +1,11 @@
+{
+	"browser": true,
+	"globals": {
+		"angular": true,
+		"_": true,
+		"$": true
+	},
+	"quotmark": "single",
+	"strict": "global",
+	"unused": true
+}

@@ -1,0 +1,11 @@
+.main {
+  min-height: 110vh;
+  margin-bottom: 400px;
+}
+
+  .main__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }

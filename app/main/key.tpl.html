@@ -1,0 +1,16 @@
+<div class="modal-close" ng-click="$close()"></div>
+<div class="key">
+  <div class="key-item"
+       ng-repeat="tag in tags"
+       ng-if="!$first">
+    <div class="key-item__top">
+      <div class="tag">
+        <img ng-src="{{tag.img}}" class="tag__img tag__img--{{tag.id}}"/>
+      </div>
+      <div class="key-item__label">{{tag.label}}</div>
+    </div>
+    <div class="key-item__text">
+      {{tag.text}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+<div class="main">
+  <div class="hero">
+    <navibar class="navibar navibar--no-icon hero__navibar"></navibar>
+    <div class="hero__graphic-container">
+      <img class="hero__graphic hero__graphic--small" src="images/pyramid.svg"/>
+      <img class="hero__graphic hero__graphic--large" src="images/pyramids.svg"/>
+    </div>
+  </div>
+  <div id="content-top">
+    <div hl-sticky class="filter-bar">
+      <div class="filter-dropdown" uib-dropdown is-open="status.isopen">
+        <div class="filter-dropdown-button" uib-dropdown-toggle>
+          <div class="tag">
+            <img ng-src="{{contentFilter.img}}" class="tag__img tag__img--{{contentFilter.id}}"/>
+          </div>
+          <div class="filter-dropdown-button__label">{{contentFilter.label}}</div>
+          <div>
+            <div class="filter-dropdown-button__caret"></div>
+          </div>
+        </div>
+        <ul class="filter-dropdown-menu dropdown-menu" uib-dropdown-menu>
+          <li class="filter-dropdown-menu__item"
+              ng-class="{'filter-dropdown-menu__item--selected': contentFilter.id === tag.id}"
+              ng-repeat="tag in tags"
+              ng-click="setContentFilter(tag.id)">
+            <div class="tag">
+              <img ng-src="{{tag.img}}" class="tag__img tag__img--{{tag.id}}"/>
+            </div>
+            <div class="filter-dropdown-menu__label">{{tag.label}}</div>
+          </li>
+        </ul>
+      </div>
+      <div class="filter-nav">
+        <div class="filter-nav__item"
+            ng-class="{'filter-nav__item--selected': contentFilter.id === tag.id}"
+            ng-repeat="tag in tags"
+            ng-click="setContentFilter(tag.id)">
+          <div class="filter-nav__tag tag">
+            <img ng-src="{{tag.img}}" class="filter-nav__img tag__img tag__img--{{tag.id}} tag__img--{{tag.id}}-center"/>
+          </div>
+          <div class="filter-nav__label">{{tag.label}}</div>
+        </div>
+      </div>
+      <div class="key-button" ng-click="openKey()">
+        <div class="key-button__inner" >
+            KEY
+        </div>
+      </div>
+    </div>
+  </div>
+  <div mixitup class="main__card-container">
+    <a mixitup-ng-repeat
+       class="card mix"
+       ng-class="{
+         'spooky': book.tags.spooky,
+         'weird': book.tags.weird,
+         'feelings': book.tags.feelings,
+         'mystical': book.tags.mystical,
+         'mysterious': book.tags.mysterious,
+         'complex': book.tags.complex
+       }"
+       ng-repeat="book in bookList"
+       ng-init="createUrl($index, book)"
+       ng-click="openReview($event, book)"
+       ng-href="{{links[$index]}}" target="_blank">
+      <img class="card__image" ng-src="images/{{book.icon}}">
+      <div class="card__bottom">
+        <div class="card__title">{{::book.title}}</div>
+        <div class="card__author">{{::book.author}}</div>
+        <div class="card__text">{{book.blurb}}</div>
+        <div class="card__tags-area"
+          ng-class="{
+            'card__tags-area--spooky': book.tags.spooky,
+            'card__tags-area--weird': book.tags.weird}">
+          <div class="card__tag card__tag--weird tag" ng-if="book.tags.weird">
+            <img  class="tag__img tag__img--weird" src="images/weird.png" uib-tooltip="Weird">
+          </div>
+          <div class="card__tag tag" ng-if="book.tags.spooky">
+            <img  class="tag__img tag__img--spooky" src="images/spooky.png" uib-tooltip="Spooky">
+          </div>
+          <div class="card__tag tag" ng-if="book.tags.feelings">
+            <img  class="tag__img tag__img--feelings" src="images/feelings.png" uib-tooltip="Feelings">
+          </div>
+          <div class="card__tag tag" ng-if="book.tags.mystical">
+            <img  class="tag__img tag__img--mystical" src="images/mystical.png" uib-tooltip="Mystical">
+          </div>
+          <div class="card__tag tag" ng-if="book.tags.mysterious">
+            <img  class="tag__img tag__img--mysterious" src="images/mysterious.png" uib-tooltip="Mysterious">
+          </div>
+          <div class="card__tag tag" ng-if="book.tags.complex">
+            <img  class="tag__img tag__img--complex" src="images/complex.png" uib-tooltip="Complex">
+          </div>
+
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

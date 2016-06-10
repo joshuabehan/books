@@ -1,0 +1,99 @@
+@import 'variables.scss';
+
+.navibar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 0.35em;
+
+  font-size: 32px;
+
+  @media (min-width: 360px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 380px) {
+    font-size: 38px;
+  }
+
+  @media (min-width: 760px) {
+    font-size: 42px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 54px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 60px;
+  }
+}
+.navibar--no-icon {
+  .navibar__icon {
+    display: none;
+  }
+}
+
+  .navibar__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 15px;
+
+    @media (min-width: 650px) {
+      margin-left: 2vw;
+    }
+  }
+  .navibar__link:link,
+  .navibar__link:visited,
+  .navibar__link:hover,
+  .navibar__link:active {
+    color: inherit;
+
+    text-decoration: none;
+    font-weight: inherit;
+  }
+
+  .navibar__icon {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 74px;
+
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+
+  .navibar__text {
+    height: 100%;
+
+    color: $white;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    text-shadow: $cyan 2px 2px 7px;
+  }
+
+  .navibar__text--contracted {
+    @media (min-width: 640px) {
+      display: none;
+    }
+  }
+
+  .navibar__text--expanded {
+    display: none;
+
+    @media (min-width: 640px) {
+      display: block;
+    }
+  }
+
+  .navibar__break {
+    @media (min-width: 640px) {
+      display: none;
+    }
+  }

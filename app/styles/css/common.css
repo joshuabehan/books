@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  color: #333333;
+  background: linear-gradient(to bottom right, #8000ff, #8000ff, #0080ff);
+  font-family: "Open Sans", sans-serif; }
+
+.modal-open {
+  overflow: hidden; }
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+  width: 31px;
+  height: 31px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.3s; }
+
+.modal-close:hover {
+  opacity: 1; }
+
+.modal-close::before, .modal-close::after {
+  position: absolute;
+  left: 15px;
+  height: 30px;
+  width: 3px;
+  background-color: #333333;
+  content: ' '; }
+
+.modal-close::before {
+  transform: rotate(45deg); }
+
+.modal-close::after {
+  transform: rotate(-45deg); }

@@ -1,0 +1,241 @@
+@import 'variables.scss';
+
+
+
+//------------------------------------\\
+//             CONTENTS               \\
+//------------------------------------\\
+//  #MODAL                            \\
+//  #FULL PAGE                        \\
+//  #DESCRIPTION                      \\
+//------------------------------------\\
+
+
+
+//------------------------------------\\
+//  #MODAL
+//------------------------------------\\
+
+.modal-description {
+  margin-bottom: 300px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    width: 748px;
+    margin: 30px auto 300px;
+  }
+}
+
+.modal-description .modal-content {
+  position: relative;
+
+  border: 0;
+  border-radius: 0;
+
+  background-color: $white;
+}
+
+
+
+//------------------------------------\\
+//  #FULL PAGE
+//------------------------------------\\
+
+.full-page-description {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+  .full-page-description__inner {
+    width: 100%;
+    max-width: 748px;
+    padding-bottom: 300px;
+
+    background-color: white;
+
+    @media (min-width: 748px) {
+      padding-top: 3vw;
+      background-color: transparent;
+    }
+  }
+
+
+
+//------------------------------------\\
+//  #DESCRIPTION
+//------------------------------------\\
+
+.desc-top {
+  display: flex;
+  justify-content: center;
+
+  background-color: $white;
+
+  @media (min-width: 620px) {
+    padding-top: 64px;
+  }
+}
+
+  .desc-top__inner {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 300px;
+    padding: 0 20px 15px;
+
+    background-color: $description-panel-color;
+
+    @media (min-width: 400px) {
+      height: 350px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 18px;
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 45px;
+    }
+  }
+
+  .desc-top__title-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .desc-top__title {
+    max-width: 600px;
+
+    font-size: 38px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+
+    @media (min-width: 400px) {
+      font-size: 44px;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 48px;
+    }
+  }
+
+  .desc-top__series {
+    max-width: 600px;
+    margin-top: 10px;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+
+    opacity: 0.9;
+
+    @media (min-width: 400px) {
+      font-size: 24px;
+    }
+  }
+
+  .desc-top__author {
+    color: $description-author-color;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    @media (min-width: 600px) {
+      font-size: 21px;
+    }
+  }
+
+  .desc-top__year {
+    color: $dark-text-color;
+    font-weight: normal;
+  }
+
+.desc-tags {
+  display: flex;
+  justify-content: center;
+
+  background-color: $white;
+}
+
+.desc-tags__inner {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  padding: 24px 20px 0;
+
+  @media (min-width: 400px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 26px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+}
+
+.desc-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85px;
+}
+
+  .desc-tag__img {
+    transform: scale(0.8);
+  }
+
+  .desc-tag__label {
+    color: $dark-text-color;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+.desc-text {
+  display: flex;
+  justify-content: center;
+  min-height: 0;
+
+  color: $dark-text-color;
+  background-color: $white;
+
+}
+
+  .desc-text__inner {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 20px 50px;
+
+    font-size: 16px;
+    line-height: 1.9;
+
+    @media (min-width: 400px) {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 20px;
+    }
+  }
+
+  .desc-text p {
+    margin-bottom: 24px;
+  }
+
+  .desc-text__blockquote {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-style: italic;
+  }
+  .desc-text__blockquote--cite {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }

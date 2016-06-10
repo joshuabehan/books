@@ -1,0 +1,52 @@
+<div class="desc-top">
+  <div class="desc-top__inner">
+    <div class="desc-top__title-container">
+      <div class="desc-top__title">{{book.title}}</div>
+      <div class="desc-top__series" ng-if="book.series">{{book.series}}</div>
+    </div>
+    <div class="desc-top__author">{{book.author}}<span class="desc-top__year">&nbsp;&nbsp;{{book.year}}</span></div>
+  </div>
+</div>
+<div class="desc-tags">
+  <div class="desc-tags__inner">
+    <div class="desc-tag" ng-if="book.tags.spooky">
+      <div class="tag desc-tag__img">
+        <img  class="tag__img tag__img--spooky tag__img--spooky-center" src="images/spooky2.png">
+      </div>
+      <div class="desc-tag__label">Spooky</div>
+    </div>
+    <div class="desc-tag" ng-if="book.tags.weird">
+      <div class="desc-tag__img tag">
+        <img  class="tag__img tag__img--weird tag__img--weird-center" src="images/weird2.png">
+      </div>
+      <div class="desc-tag__label">Weird</div>
+    </div>
+    <div class="desc-tag" ng-if="book.tags.feelings">
+      <div class="tag desc-tag__img">
+        <img class="tag__img tag__img--feelings" src="images/feelings2.png">
+      </div>
+      <div class="desc-tag__label">Feelings</div>
+    </div>
+    <div class="desc-tag" ng-if="book.tags.mystical">
+      <div class="tag desc-tag__img">
+        <img class="tag__img tag__img--mystical" src="images/mystical2.png">
+      </div>
+      <div class="desc-tag__label">Mystical</div>
+    </div>
+    <div class="desc-tag" ng-if="book.tags.mysterious">
+      <div class="tag desc-tag__img">
+        <img class="tag__img tag__img--mysterious" src="images/mysterious2.png">
+      </div>
+      <div class="desc-tag__label">Mysterious</div>
+    </div>
+    <div class="desc-tag" ng-if="book.tags.complex">
+      <div class="tag desc-tag__img">
+        <img class="tag__img tag__img--complex" src="images/complex2.png">
+      </div>
+      <div class="desc-tag__label">Complex</div>
+    </div>
+  </div>
+</div>
+<div class="desc-text">
+  <div class="desc-text__inner" bind-html-compile="bookDescription"></div>
+</div>

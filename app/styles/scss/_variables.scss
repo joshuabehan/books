@@ -1,0 +1,28 @@
+$dark-text-color: rgb(51,51,51);
+$gray-text-color: rgb(86, 86, 86);
+$white: rgb(255,255,255);
+$purple: rgb(128, 0, 255);
+$magenta: rgb(255,0,255);
+$blue: rgb(0, 128, 255);
+$green: rgb(0, 255, 128);
+$teal: rgb(0,255,191);
+$cyan: rgb(0, 255, 255);
+
+$green-slab-right-1: $green;
+$green-slab-right-2: darken($green, 10%);
+$green-slab-bottom-1: darken($green, 10%);
+$green-slab-bottom-2: darken($green, 15%);
+$cyan-slab-right-1: darken($cyan, 5%);
+$cyan-slab-right-2: darken($cyan, 15%);
+$cyan-slab-bottom-1: darken($cyan, 15%);
+$cyan-slab-bottom-2: darken($cyan, 20%);
+$card-shadow-color: darken($cyan, 11%);
+
+$trns: transparent;
+$hbg: rgba(255,255,255,0.15);
+$hover-highlight-color: rgb(160,255,255);
+
+$description-panel-color: rgb(242,242,252);
+$description-author-color: darken($green, 10%);
+
+$filter-breakpoint: 900px;
